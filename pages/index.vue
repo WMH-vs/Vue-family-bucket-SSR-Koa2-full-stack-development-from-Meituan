@@ -26,14 +26,11 @@ export default {
   }
 }
 </script>
-<<<<<<< HEAD
- 
-<style lang="scss">
-  @import "@/assets/css/index/index.scss";
-</style>
-=======
 
 <style lang="scss">
   @import "@/assets/css/index/index.scss";
 </style>
->>>>>>> timerid
+
+<style lang="scss">
+  @import "@/assets/css/index/index.scss";
+</style>
