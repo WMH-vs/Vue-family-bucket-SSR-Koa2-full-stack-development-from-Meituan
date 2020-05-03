@@ -160,8 +160,10 @@ import axios from 'axios'
                     self.statusMsg = `验证码已发送,剩余${count--}秒`
                     self.timerid = setInterval(function () {
                       self.statusMsg = `验证码已发送,剩余${count--}秒`
-                      if (count === 0) {
+                      if (count === -1) {
                         clearInterval(self.timerid)
+                        self.timerid = null
+                        self.statusMsg = ''
                       }
                     }, 1000)
                   } else {
